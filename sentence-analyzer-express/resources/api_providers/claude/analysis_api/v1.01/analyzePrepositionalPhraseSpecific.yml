@@ -1,0 +1,6 @@
+phrase_type: Prepositional Phrase
+specific_rule: Output must include a Preposition and Object.
+valid_labels: Preposition, Object, Modifier
+example_label: Preposition
+example_unit: Word
+example_properties:

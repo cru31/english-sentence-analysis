@@ -1,0 +1,45 @@
+[
+  {
+    "label": "Determiner",
+    "unit": "Word",
+    "text": "the",
+    "target_index": 3,
+    "children": []
+  },
+  {
+    "label": "Modifier",
+    "unit": "Word",
+    "text": "ostensibly",
+    "target_index": 2,
+    "children": []
+  },
+  {
+    "label": "Modifier",
+    "unit": "Word",
+    "text": "insurmountable",
+    "target_index": 3,
+    "children": []
+  },
+  {
+    "label": "Head Noun",
+    "unit": "Word",
+    "text": "challenges",
+    "children": []
+  },
+  {
+    "label": "Modifier",
+    "unit": "Phrase",
+    "constituent_type": "Participial Phrase",
+    "text": "posed by the labyrinthine bureaucracy",
+    "target_index": 3,
+    "children": []
+  },
+  {
+    "label": "Prepositional Phrase",
+    "unit": "Phrase",
+    "constituent_type": "Prepositional Phrase",
+    "text": "by the labyrinthine bureaucracy",
+    "target_index": 4,
+    "children": []
+  }
+]

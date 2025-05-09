@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영문장 분석기</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>영문장 분석기</h1>
+            <p class="version-info">API 버전: <span id="api-version">로드 중...</span></p>
+        </header>
+        
+        <!-- 입력 섹션 -->
+        <section class="input-section">
+            <textarea id="sentence-input" placeholder="분석할 영문장을 입력하세요">The hungry cat chased the small mouse around the old house.</textarea>
+            <div class="button-group">
+                <button id="analyze-button" class="primary-button">분석하기</button>
+                <button id="clear-cache-button" class="secondary-button">캐시 삭제</button>
+            </div>
+        </section>
+
+        <!-- 알림 섹션 -->
+        <section id="notification-section">
+            <div id="error-section" class="error notification" style="display: none;"></div>
+            <div id="loading-section" class="loading notification" style="display: none;">
+                <div class="spinner"></div>
+                <span>분석 중...</span>
+            </div>
+            <div id="success-section" class="success notification" style="display: none;"></div>
+        </section>
+        
+        <!-- JSON 응답 표시 섹션 -->
+        <section id="json-response-section" class="json-section" style="display: none;">
+            <div class="section-header">
+                <h2>JSON 응답</h2>
+                <button id="toggle-json-button" class="toggle-button">접기</button>
+            </div>
+            <div id="json-content" class="content-wrapper">
+                <pre id="json-viewer"></pre>
+            </div>
+        </section>
+
+        <!-- 분석 결과 표시 섹션 -->
+        <section id="result-section" class="result-section">
+            <div class="section-header">
+                <h2>분석 결과</h2>
+            </div>
+            <div id="result-content" class="content-wrapper">
+                <!-- 분석 결과가 여기에 표시됩니다 -->
+            </div>
+        </section>
+
+        <!-- 프롬프트 정보 표시 섹션 -->
+        <section id="prompt-section" class="prompt-section" style="display: none;">
+            <div class="section-header">
+                <h2>분석 프롬프트</h2>
+                <button id="toggle-prompt-button" class="toggle-button">접기</button>
+            </div>
+            <div id="prompt-content" class="content-wrapper">
+                <pre id="prompt-viewer"></pre>
+            </div>
+        </section>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

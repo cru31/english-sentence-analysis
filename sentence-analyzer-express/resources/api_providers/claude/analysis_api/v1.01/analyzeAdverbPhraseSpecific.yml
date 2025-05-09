@@ -1,0 +1,6 @@
+phrase_type: Adverb Phrase
+specific_rule: Output must include a Head Adverb.
+valid_labels: Head Adverb, Modifier, Complement
+example_label: Head Adverb
+example_unit: Word
+example_properties:

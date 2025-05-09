@@ -1,0 +1,6 @@
+phrase_type: Adjective Phrase
+specific_rule: Output must include a Head Adjective.
+valid_labels: Head Adjective, Modifier, Complement
+example_label: Head Adjective
+example_unit: Word
+example_properties:

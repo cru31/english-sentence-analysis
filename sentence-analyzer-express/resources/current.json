@@ -1,0 +1,7 @@
+{
+  "analysis_api_functions": {
+    "version": "v1.01",
+    "provider": "claude",
+    "base_path": "api_providers/claude/analysis_api/v1.01"
+  }
+} 

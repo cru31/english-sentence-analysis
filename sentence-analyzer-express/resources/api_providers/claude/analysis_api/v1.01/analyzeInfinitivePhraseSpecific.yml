@@ -1,0 +1,6 @@
+phrase_type: Infinitive Phrase
+specific_rule: Output must include a To Marker and Main Verb.
+valid_labels: To Marker, Main Verb, Object, Adverb, Complement
+example_label: To Marker
+example_unit: Word
+example_properties: 

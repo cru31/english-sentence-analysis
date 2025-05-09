@@ -1,0 +1,6 @@
+phrase_type: Verb Phrase
+specific_rule: Output must include exactly one Main Verb.
+valid_labels: Main Verb, Auxiliary Verb, Adverb, Object, Complement, Prepositional Phrase, Infinitive Clause, Subordinate Clause, Particle
+example_label: Main Verb
+example_unit: Word
+example_properties:

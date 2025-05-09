@@ -1,0 +1,6 @@
+phrase_type: Gerund Phrase
+specific_rule: Output must include a Gerund.
+valid_labels: Gerund, Object, Modifier, Complement
+example_label: Gerund
+example_unit: Word
+example_properties: 

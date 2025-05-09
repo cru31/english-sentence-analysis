@@ -1,0 +1,6 @@
+phrase_type: Participial Phrase
+specific_rule: Output must include a Participle.
+valid_labels: Participle, Object, Modifier, Complement
+example_label: Participle
+example_unit: Word
+example_properties:

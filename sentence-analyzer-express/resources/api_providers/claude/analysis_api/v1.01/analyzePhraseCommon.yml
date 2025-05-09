@@ -1,0 +1,46 @@
+model: claude-3-7-sonnet-20250219
+max_tokens: 4000
+temperature: 0.1
+messages:
+  - role: user
+    content: |
+      TASK:
+      Decompose the given {{phrase_type}} into its internal grammatical components.
+
+      RULES:
+      - Input is a {{phrase_type}}.
+      - {{specific_rule}}
+      - Each component must include ALL the required fields.
+
+      Each component must include:
+      - "label": one of: {{valid_labels}}
+      - "unit": one of: Clause, Phrase, Word
+      - "text": exact surface string
+      - "constituent_type": required for Phrase units (must be one of the exact values listed below)
+      - "target_index": required if this component modifies another (0-based index)
+      - "children": [] (empty array, will be populated later)
+
+      Valid constituent_type values (use EXACTLY these strings):
+      - "Noun Phrase"
+      - "Verb Phrase" 
+      - "Prepositional Phrase"
+      - "Adjective Phrase"
+      - "Adverb Phrase"
+      - "Participial Phrase"
+      - "Infinitive Phrase"
+      - "Gerund Phrase"
+      - "Subordinate Clause"
+
+      Return ONLY a JSON array of components. Format like:
+      [
+        {
+          "label": "{{example_label}}",
+          "unit": "{{example_unit}}",
+          "text": "example text",
+          {{example_properties}}
+          "children": []
+        },
+        ...
+      ]
+
+      ANALYZE THIS TEXT: "{{text}}"

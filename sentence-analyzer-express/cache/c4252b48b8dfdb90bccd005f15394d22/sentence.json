@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Modifier",
+    "unit": "Phrase",
+    "text": "Despite the ostensibly insurmountable challenges posed by the labyrinthine bureaucracy",
+    "constituent_type": "Prepositional Phrase",
+    "target_index": 2,
+    "children": [],
+    "id": "0-0"
+  },
+  {
+    "label": "Subject",
+    "unit": "Phrase",
+    "text": "the intrepid entrepreneur, armed with unwavering determination and an eclectic array of innovative strategies,",
+    "constituent_type": "Noun Phrase",
+    "children": [],
+    "id": "0-1"
+  },
+  {
+    "label": "Verb Phrase",
+    "unit": "Phrase",
+    "text": "deftly navigated the convoluted regulatory landscape to successfully establish a thriving enterprise",
+    "constituent_type": "Verb Phrase",
+    "children": [],
+    "id": "0-2"
+  }
+]

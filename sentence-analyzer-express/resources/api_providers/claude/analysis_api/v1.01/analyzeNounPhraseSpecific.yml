@@ -1,0 +1,6 @@
+phrase_type: Noun Phrase
+specific_rule: Output must include a Head Noun.
+valid_labels: Head Noun, Determiner, Modifier, Prepositional Phrase, Complement
+example_label: Head Noun
+example_unit: Word
+example_properties:

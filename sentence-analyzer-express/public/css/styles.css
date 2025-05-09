@@ -1,0 +1,312 @@
+:root {
+    --primary-color: #4a6fa5;
+    --secondary-color: #7a9cc6;
+    --accent-color: #ff9800;
+    --success-color: #4caf50;
+    --error-color: #f44336;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --border-color: #e0e0e0;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 헤더 스타일 */
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.version-info {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* 섹션 공통 스타일 */
+section {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-header h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.content-wrapper {
+    padding: 20px;
+}
+
+/* 입력 섹션 스타일 */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+#sentence-input {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    resize: vertical;
+    font-family: inherit;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #3a5b8c;
+}
+
+.secondary-button {
+    background-color: #e0e0e0;
+    color: var(--text-primary);
+}
+
+.secondary-button:hover {
+    background-color: #d0d0d0;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    text-decoration: underline;
+}
+
+/* 알림 섹션 스타일 */
+.notification {
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+}
+
+.error {
+    background-color: rgba(244, 67, 54, 0.1);
+    border-left: 4px solid var(--error-color);
+    color: #d32f2f;
+}
+
+.success {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-left: 4px solid var(--success-color);
+    color: #388e3c;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(74, 111, 165, 0.1);
+    border-left: 4px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(74, 111, 165, 0.2);
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* JSON 응답 섹션 스타일 */
+.json-section {
+    margin-bottom: 20px;
+}
+
+#json-viewer {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.5;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* 분석 결과 섹션 스타일 */
+.result-section {
+    margin-bottom: 20px;
+}
+
+/* 컴포넌트 트리 스타일 */
+.component {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.component:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.component-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.component-label {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.component-type {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.component-text {
+    padding: 10px 15px;
+    font-style: italic;
+    color: var(--text-secondary);
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.component-children {
+    padding: 10px 15px 5px;
+    border-top: 1px dashed var(--border-color);
+    margin-left: 20px;
+}
+
+.analyzing {
+    opacity: 0.7;
+    position: relative;
+}
+
+.analyzing::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+
+/* 프롬프트 정보 섹션 스타일 */
+.prompt-section {
+    margin-bottom: 20px;
+}
+
+#prompt-viewer {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.5;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #json-viewer, #prompt-viewer {
+        font-size: 0.8rem;
+    }
+}

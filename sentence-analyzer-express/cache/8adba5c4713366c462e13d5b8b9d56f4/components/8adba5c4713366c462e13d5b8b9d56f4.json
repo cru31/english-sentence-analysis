@@ -1,0 +1,15 @@
+[
+  {
+    "label": "Preposition",
+    "unit": "Word",
+    "text": "Despite",
+    "children": []
+  },
+  {
+    "label": "Object",
+    "unit": "Phrase",
+    "constituent_type": "Noun Phrase",
+    "text": "the ostensibly insurmountable challenges posed by the labyrinthine bureaucracy",
+    "children": []
+  }
+]
