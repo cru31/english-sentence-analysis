@@ -12,7 +12,7 @@
 
 ```bash
 # 프로젝트 클론
-git clone https://github.com/your-username/english-sentence-analysis.git
+git clone https://github.com/cru31/english-sentence-analysis.git
 
 # 프로젝트 디렉토리로 이동
 cd english-sentence-analysis
